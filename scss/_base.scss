@@ -1,0 +1,50 @@
+:root {
+  --color-primary: #e67e22;
+  --color-primary-dark: #cf6d17;
+
+  --color-grey-light-1: #fcfcfc;
+  --color-grey-light-2: #f4f4f4;
+  --color-grey-light-3: #efefef;
+  --color-grey-light-4: #e8e8e8;
+
+  --color-grey-dark-1: #ccc;
+  --color-grey-dark-2: #888;
+  --color-grey-dark-3: #555;
+  --color-grey-dark-4: #333;
+
+  --font-primary: "Lato", "Arial", sans-serif;
+  --default-font-size: 2rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // 1rem = 10px
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: var(--color-grey-dark-3);
+  font-family: var(--font-primary);
+  font-weight: 300;
+  font-size: var(--default-font-size);
+  // todo: check if it needed
+  // overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns:
+    [full-start] 1fr
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] 1fr [full-end];
+}

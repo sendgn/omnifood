@@ -1,0 +1,85 @@
+/* HEADINGS */
+.heading-1,
+.heading-2,
+.heading-3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.heading-1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+.heading-2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--color-primary);
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+
+.heading-3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+/* BUTTONS */
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid var(--color-primary-dark);
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid var(--color-primary-dark);
+  color: #fff;
+}

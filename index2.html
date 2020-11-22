@@ -15,8 +15,39 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Omnifood (grid)</title>
   </head>
-  <body>
-    <header class="header">Header</header>
+  <body class="container">
+    <header class="header">
+      <nav class="navigation">
+        <!-- todo: create mobile navigation -->
+        <!-- <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black"> -->
+        <img
+          src="resources/img/logo-white.png"
+          alt="Omnifood logo"
+          class="navigation__logo"
+        />
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#features" class="navigation__link">Food delivery</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#works" class="navigation__link">How it works</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#cities" class="navigation__link">Our cities</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#plans" class="navigation__link">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__text-box">
+        <h1 class="heading-1">
+          Goodbye junk food.<br />Hello super healthy meals.
+        </h1>
+        <a class="btn btn-full" href="#">I'm hungry</a>
+        <a class="btn btn-ghost" href="#">Show me more</a>
+      </div>
+    </header>
     <section class="section-features">Features</section>
     <section class="section-gallery">Gallery</section>
     <section class="section-steps">Steps</section>
