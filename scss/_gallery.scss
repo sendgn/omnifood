@@ -1,3 +1,29 @@
 .section-gallery {
+  padding: 0;
   grid-column: full-start / full-end;
+
+  &__list {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__photo {
+    background-color: #000;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.03);
+    }
+  }
 }

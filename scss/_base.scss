@@ -124,3 +124,19 @@ input[type="submit"]:active {
   vertical-align: middle;
   margin-top: -5px;
 }
+
+/* LINKS */
+a:link,
+a:visited {
+  color: var(--color-primary);
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--color-primary);
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: var(--color-grey-dark-3);
+  border-bottom: 1px solid transparent;
+}
