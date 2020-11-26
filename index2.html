@@ -354,6 +354,8 @@
         </div>
       </div>
     </section>
+
+    <!-- PLANS -->
     <section class="section-plans">
       <h2 class="heading-2">Start eating healthy today</h2>
 
@@ -455,7 +457,74 @@
         </div>
       </div>
     </section>
-    <section class="section-form">Form</section>
+
+    <!-- FORM -->
+    <section class="section-form">
+      <h2 class="heading-2">We're happy to hear from you</h2>
+
+      <form method="post" class="contact-form">
+        <div class="contact-form__field">
+          <label for="name" class="contact-form__label">Name</label>
+          <input
+            class="contact-form__input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+        <div class="contact-form__field">
+          <label for="email" class="contact-form__label">Email</label>
+          <input
+            class="contact-form__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email"
+            required
+          />
+        </div>
+        <div class="contact-form__field">
+          <label for="find-us" class="contact-form__label">
+            How did you find us?
+          </label>
+          <select class="contact-form__input" name="find-us" id="find-us">
+            <option value="friends" selected>Friends</option>
+            <option value="search">Search engine</option>
+            <option value="ad">Advertisement</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="contact-form__field">
+          <label for="news" class="contact-form__label">Newsletter?</label>
+          <div class="contact-form__input">
+            <input
+              class="contact-form__input"
+              type="checkbox"
+              name="news"
+              id="news"
+              checked
+            />Yes, please
+          </div>
+        </div>
+        <div class="contact-form__field">
+          <label for="message" class="contact-form__label">
+            Drop us a line
+          </label>
+          <textarea
+            class="contact-form__input"
+            name="message"
+            id="message"
+            placeholder="Your message"
+          ></textarea>
+        </div>
+        <div class="contact-form__field">
+          <label class="contact-form__label">&nbsp;</label>
+          <input class="contact-form__input" type="submit" value="Send it!" />
+        </div>
+      </form>
+    </section>
     <footer class="footer">Footer</footer>
 
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>

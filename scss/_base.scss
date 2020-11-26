@@ -36,7 +36,7 @@ body {
   font-family: var(--font-primary);
   font-weight: 300;
   font-size: var(--default-font-size);
-  // todo: check if it needed
+  // TODO: check if it needed
   // overflow-x: hidden;
 }
 
@@ -61,11 +61,13 @@ section {
 .btn:link,
 .btn:visited,
 input[type='submit'] {
-  display: inline-block;
-  padding: 10px 30px;
+  font-family: var(--font-primary);
+  font-size: var(--default-font-size);
   font-weight: 300;
+  display: inline-block;
+  padding: 1rem 3rem;
   text-decoration: none;
-  border-radius: 200px;
+  border-radius: 20rem;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -75,7 +77,7 @@ input[type='submit'] {
   background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
   color: #fff;
-  margin-right: 15px;
+  margin-right: 1.5rem;
 }
 
 .btn-ghost:link,
@@ -108,16 +110,16 @@ input[type='submit']:active {
   font-size: 350%;
   display: block;
   color: var(--color-primary);
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .icon-small {
   display: inline-block;
-  width: 30px;
+  width: 3rem;
   text-align: center;
   color: var(--color-primary);
   font-size: 120%;
-  margin-right: 10px;
+  margin-right: 1rem;
 
   /* secrets to align text and icons */
   line-height: 120%;
