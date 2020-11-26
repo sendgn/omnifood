@@ -20,6 +20,14 @@
     grid-column: left-start / left-end;
   }
 
+  &__input,
+  &__input::-webkit-input-placeholder {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    color: var(--color-grey-dark-2);
+  }
+
   input[type='submit'] {
     justify-self: start;
   }
@@ -45,16 +53,4 @@
   *:focus {
     outline: none;
   }
-
-  &__input::-webkit-input-placeholder,
-  &__input {
-    font-size: inherit;
-    font-weight: inherit;
-    font-family: inherit;
-    color: var(--color-grey-dark-2);
-  }
-
-  // &__input::-moz-placeholder,
-  // &__input:-moz-placeholder,
-  // &__input:-ms-input-placeholder
 }
