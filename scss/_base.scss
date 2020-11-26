@@ -36,8 +36,7 @@ body {
   font-family: var(--font-primary);
   font-weight: 300;
   font-size: var(--default-font-size);
-  // TODO: check if it needed
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 section {
@@ -57,77 +56,7 @@ section {
     [center-end] minmax(3rem, 1fr) [full-end];
 }
 
-/* BUTTONS */
-.btn:link,
-.btn:visited,
-input[type='submit'] {
-  font-family: var(--font-primary);
-  font-size: var(--default-font-size);
-  font-weight: 300;
-  display: inline-block;
-  padding: 1rem 3rem;
-  text-decoration: none;
-  border-radius: 20rem;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-.btn-full:link,
-.btn-full:visited,
-input[type='submit'] {
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-primary);
-  color: #fff;
-  margin-right: 1.5rem;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
-}
-
-.btn:hover,
-.btn:active,
-input[type='submit']:hover,
-input[type='submit']:active {
-  background-color: var(--color-primary-dark);
-  cursor: pointer;
-}
-
-.btn-full:hover,
-.btn-full:active {
-  border: 1px solid var(--color-primary-dark);
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-  border: 1px solid var(--color-primary-dark);
-  color: #fff;
-}
-
-/* ICONS */
-.icon-big {
-  font-size: 350%;
-  display: block;
-  color: var(--color-primary);
-  margin-bottom: 1rem;
-}
-
-.icon-small {
-  display: inline-block;
-  width: 3rem;
-  text-align: center;
-  color: var(--color-primary);
-  font-size: 120%;
-  margin-right: 1rem;
-
-  /* secrets to align text and icons */
-  line-height: 120%;
-  vertical-align: middle;
-  margin-top: -5px;
-}
-
-/* LINKS */
+// LINKS //
 a:link,
 a:visited {
   color: var(--color-primary);
