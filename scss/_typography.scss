@@ -8,7 +8,7 @@
 
 .heading-1 {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   color: #fff;
   font-size: 240%;
   word-spacing: 4px;
@@ -19,23 +19,23 @@
   font-size: 180%;
   word-spacing: 2px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   letter-spacing: 1px;
 
   &::after {
-    content: "";
+    content: '';
     display: block;
     height: 2px;
     background-color: var(--color-primary);
-    width: 100px;
+    width: 10rem;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 3rem;
   }
 }
 
 .heading-3 {
   font-size: 110%;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .long-copy {

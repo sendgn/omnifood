@@ -1,3 +1,76 @@
 .footer {
   grid-column: full-start / full-end;
+  background: var(--color-grey-dark-4);
+  padding: 5rem;
+  font-size: 80%;
+
+  &__content {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__copy {
+    color: #888;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  &__nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    column-gap: 2.3rem;
+  }
+
+  &__social {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 2.3rem;
+    justify-self: end;
+
+    &--vk,
+    &--linkedin,
+    &--twitter,
+    &--instagram {
+      transition: color 0.2s;
+    }
+
+    &--vk:hover {
+      color: #45668e;
+    }
+
+    &--linkedin:hover {
+      color: #007bb5;
+    }
+
+    &--twitter:hover {
+      color: #55acee;
+    }
+
+    &--instagram:hover {
+      color: #cd486b;
+    }
+  }
+
+  &__nav li a:link,
+  &__nav li a:visited,
+  &__social li a:link,
+  &__social li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: var(--color-grey-dark-2);
+    transition: color 0.2s;
+  }
+
+  &__nav li a:hover,
+  &__nav li a:active {
+    color: #ddd;
+  }
+
+  &__social li a:link,
+  &__social li a:visited {
+    font-size: 160%;
+  }
 }
