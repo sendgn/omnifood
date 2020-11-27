@@ -14,6 +14,9 @@
 
   --font-primary: 'Lato', 'Arial', sans-serif;
   --default-font-size: 2rem;
+
+  // RESPONSIVE BREAKPOINTS
+  $bp-largest: 75em; // 1200px
 }
 
 *,
