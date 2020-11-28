@@ -1,3 +1,7 @@
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 64em; // 1024px
+
 :root {
   --color-primary: #e67e22;
   --color-primary-dark: #cf6d17;
@@ -14,9 +18,8 @@
 
   --font-primary: 'Lato', 'Arial', sans-serif;
   --default-font-size: 2rem;
-
-  // RESPONSIVE BREAKPOINTS
-  $bp-largest: 75em; // 1200px
+  --medium-font-size: 1.8rem;
+  --small-font-size: 1.6rem;
 }
 
 *,
@@ -40,10 +43,18 @@ body {
   font-weight: 300;
   font-size: var(--default-font-size);
   overflow-x: hidden;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: var(--medium-font-size);
+  }
 }
 
 section {
   padding: 8rem 0;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 6rem 0;
+  }
 }
 
 .container {

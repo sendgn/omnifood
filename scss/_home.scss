@@ -116,9 +116,13 @@
   }
 
   .btn-app img {
-    height: 50px;
+    height: 5rem;
     width: auto;
-    margin-right: 10px;
+    margin-right: 1rem;
+
+    // @media only screen and (max-width: $bp-large) {
+    //   height: 4.8rem;
+    // }
   }
 }
 
