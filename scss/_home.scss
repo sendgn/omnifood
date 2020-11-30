@@ -87,6 +87,10 @@
   &__right-part {
     display: grid;
     row-gap: 4.5rem;
+
+    @media only screen and (max-width: $bp-large) {
+      row-gap: 3.5rem;
+    }
   }
 
   &__step {
@@ -103,6 +107,10 @@
       padding: 0.5rem;
       font-size: 150%;
       margin-right: 2.5rem;
+
+      @media only screen and (max-width: $bp-large) {
+        padding: 0.7rem;
+      }
     }
   }
 
@@ -120,9 +128,9 @@
     width: auto;
     margin-right: 1rem;
 
-    // @media only screen and (max-width: $bp-large) {
-    //   height: 4.8rem;
-    // }
+    @media only screen and (max-width: $bp-large) {
+      height: 4.8rem;
+    }
   }
 }
 
@@ -144,6 +152,10 @@
 
   &__city-feature {
     margin-bottom: 0.5rem;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 85%;
+    }
   }
 }
 
@@ -181,7 +193,7 @@
     }
 
     blockquote::before {
-      content: '\201C';
+      content: "\201C";
       font-size: 500%;
       display: block;
       position: absolute;
@@ -223,6 +235,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5rem;
+
+    @media only screen and (max-width: $bp-large) {
+      column-gap: 4rem;
+    }
   }
 
   &__plan-box {
@@ -260,6 +276,10 @@
     margin-bottom: 1rem;
     font-weight: 100;
     color: var(--color-primary);
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 250%;
+    }
 
     span {
       font-size: 30%;

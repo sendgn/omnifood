@@ -152,6 +152,10 @@
   width: 70%;
   margin: 0 auto;
 
+  @media only screen and (max-width: $bp-large) {
+    width: 80%;
+  }
+
   &__field {
     padding: 0 2%;
     display: grid;
@@ -174,13 +178,13 @@
     color: var(--color-grey-dark-2);
   }
 
-  input[type='submit'] {
+  input[type="submit"] {
     margin-top: 1rem;
     justify-self: start;
   }
 
-  input[type='text'],
-  input[type='email'],
+  input[type="text"],
+  input[type="email"],
   select,
   textarea {
     width: 100%;
@@ -193,7 +197,7 @@
     height: 10rem;
   }
 
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     margin: 1rem 0.5rem 1rem 0;
   }
 
