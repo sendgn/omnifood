@@ -1,6 +1,8 @@
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; // 1200px
 $bp-large: 64em; // 1024px
+$bp-medium: 51.75em; // 768px
+$bp-small: 30em; // 480px
 
 :root {
   --color-primary: #e67e22;
@@ -16,7 +18,7 @@ $bp-large: 64em; // 1024px
   --color-grey-dark-3: #555;
   --color-grey-dark-4: #333;
 
-  --font-primary: 'Lato', 'Arial', sans-serif;
+  --font-primary: "Lato", "Arial", sans-serif;
   --default-font-size: 2rem;
   --medium-font-size: 1.8rem;
   --small-font-size: 1.6rem;
@@ -47,6 +49,10 @@ body {
   @media only screen and (max-width: $bp-large) {
     font-size: var(--medium-font-size);
   }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: var(--small-font-size);
+  }
 }
 
 section {
@@ -54,6 +60,10 @@ section {
 
   @media only screen and (max-width: $bp-large) {
     padding: 6rem 0;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 4rem 0;
   }
 }
 

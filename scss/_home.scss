@@ -5,10 +5,23 @@
   display: grid;
   row-gap: 4.5rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    row-gap: 2.5rem;
+  }
+
   .features {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+
+      h3 {
+        text-align: center;
+      }
+    }
   }
 
   .feature {
@@ -17,6 +30,16 @@
     &__text {
       font-size: 90%;
       line-height: 145%;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 110%;
+      }
+    }
+
+    .icon-big {
+      @media only screen and (max-width: $bp-medium) {
+        margin: 0 auto 1rem auto;
+      }
     }
   }
 }
@@ -70,8 +93,13 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: end;
+    align-items: center;
     column-gap: 7%;
+
+    @media only screen and (max-width: $bp-medium) {
+      column-gap: 5%;
+      align-items: center;
+    }
   }
 
   &__left-part {
@@ -82,6 +110,11 @@
     width: 40%;
     display: block;
     justify-self: end;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-self: center;
+      width: 45%;
+    }
   }
 
   &__right-part {
@@ -90,6 +123,10 @@
 
     @media only screen and (max-width: $bp-large) {
       row-gap: 3.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      row-gap: 2.5rem;
     }
   }
 
@@ -111,6 +148,14 @@
       @media only screen and (max-width: $bp-large) {
         padding: 0.7rem;
       }
+
+      @media only screen and (max-width: $bp-medium) {
+        height: 4rem;
+        width: 4rem;
+        padding: 4px;
+        margin-right: 1.5rem;
+        font-size: 130%;
+      }
     }
   }
 
@@ -131,6 +176,10 @@
     @media only screen and (max-width: $bp-large) {
       height: 4.8rem;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 3.5rem;
+    }
   }
 }
 
@@ -143,6 +192,11 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 4rem;
     padding: 2rem 0;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+    }
   }
 
   &__city-img {
@@ -155,6 +209,10 @@
 
     @media only screen and (max-width: $bp-large) {
       font-size: 85%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 100%;
     }
   }
 }
@@ -238,6 +296,12 @@
 
     @media only screen and (max-width: $bp-large) {
       column-gap: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 30rem;
+      row-gap: 5rem;
+      justify-content: center;
     }
   }
 
