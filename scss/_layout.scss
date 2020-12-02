@@ -160,6 +160,10 @@
     width: 80%;
   }
 
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%;
+  }
+
   &__field {
     padding: 0 2%;
     display: grid;
